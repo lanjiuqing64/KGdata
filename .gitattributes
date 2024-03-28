@@ -1,8 +1,8 @@
-T-REX_3hop.json filter=lfs diff=lfs merge=lfs -text
-Zero_Shot_RE_3hop.json filter=lfs diff=lfs merge=lfs -text
-Creak_topic_entity_3hop.json filter=lfs diff=lfs merge=lfs -text
 Creak_topic_entity_3hop_labels.json filter=lfs diff=lfs merge=lfs -text
 Qa10_en_topic_entity_3hop.json filter=lfs diff=lfs merge=lfs -text
+T-REX_3hop.json filter=lfs diff=lfs merge=lfs -text
 T-REX_3hop_labels.json filter=lfs diff=lfs merge=lfs -text
+Zero_Shot_RE_3hop.json filter=lfs diff=lfs merge=lfs -text
 Zero_Shot_RE_3hop_labels.json filter=lfs diff=lfs merge=lfs -text
 qa10_en_3hop_labels.json filter=lfs diff=lfs merge=lfs -text
+Creak_topic_entity_3hop.json filter=lfs diff=lfs merge=lfs -text
