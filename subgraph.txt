@@ -242,28 +242,11 @@ if __name__ == "__main__":
         # break
 
     # save the res as json file
-    with open(f'/home/ec2-user/ToG/Wikidata/{filename}_2hop.json', 'w') as f:
+    with open(f'/home/ec2-user/ToG/Wikidata/{filename}_3hop.json', 'w') as f:
         json.dump(res, f, indent=4)
 
     # save the labels as json file
-    with open(f'/home/ec2-user/ToG/Wikidata/{filename}_2hop_labels.json', 'w') as f:
+    with open(f'/home/ec2-user/ToG/Wikidata/{filename}_3hop_labels.json', 'w') as f:
         json.dump(labeldict, f, indent=4)
 
-    hop3_entities = list(set(HOP2ENTITY))
-    hop3res = defaultdict()
-    hop3labeldict = defaultdict()
-    for ent in tqdm(hop3_entities):
-        triples = get_all_triples(client,ent)
-        hop3res[ent] = triples
-        current_labels =get_labels(client,triples)
-        for id,label in zip(triples,current_labels):
-            for x,y in zip(id,label):
-                if y:
-                    hop3labeldict[x] = y
-
-    # save the hop3res as json file
-    with open(f'/home/ec2-user/ToG/Wikidata/{filename}_3rd_hop.json', 'w') as f:
-        json.dump(hop3res, f, indent=4)
-    # save the hop3labels as json file
-    with open(f'/home/ec2-user/ToG/Wikidata/{filename}_3rd_hop_labels.json', 'w') as f:
-        json.dump(hop3labeldict, f, indent=4)
+ 
