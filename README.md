@@ -2,19 +2,14 @@
 
 ## Overview
 
-This repository contains the code and dataset associated with the paper titled "ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs", published on [arXiv](https://arxiv.org/abs/2404.07677).
+This repository contains the code and dataset associated with the paper [ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs](https://arxiv.org/abs/2404.07677)
 
 ## The overall framework of ODA
-![ODA Framework](framework.png)
+![The framework of ODA](framework.png)
 
-## Content
+## Description
 
-1. **Code and Dataset**: The code and dataset used in the paper are available here. 
-
-    - Paper Link: [ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs](https://arxiv.org/abs/2404.07677)
-
-2. **Description**:
-
+    - The code and subgraph datasets used in the paper are here.
     - In the `subgraphs` folder: This directory contains the generated 2-hop and 3rd-hop subgraphs. We deployed the Wikidata dump across five AWS EC2 instances, each consisting of a 768GB machine with 48 cores. The specific code used for generating the subgraphs can be found in `subgraph.py`.
 
     - In the `simple_wikidata_db` folder: This directory contains the deployed Wikidata dump.
