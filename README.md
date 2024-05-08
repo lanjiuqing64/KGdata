@@ -25,7 +25,7 @@ This repository contains the code and dataset associated with the paper [ODA: Ob
 
 2. Explore the contents of the repository, including the code and dataset.
 
-3. For generating subgraphs, refer to the `subgraph.py` script in the `subgraphs` folder.
+3. For generating subgraphs, refer to the `subgraph.py` script.
 
 4. For accessing the Wikidata dump, navigate to the `simple_wikidata_db` folder.
 
