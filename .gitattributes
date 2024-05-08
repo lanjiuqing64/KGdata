@@ -2,4 +2,3 @@ simple_wikidata_db/**/* filter=lfs diff=lfs merge=lfs -text
 simple_wikidata_db filter=lfs diff=lfs merge=lfs -text
 subgraphs filter=lfs diff=lfs merge=lfs -text
 subgraph.py filter=lfs diff=lfs merge=lfs -text
-framework.png filter=lfs diff=lfs merge=lfs -text
