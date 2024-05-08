@@ -20,19 +20,6 @@ The integration of Large Language Models (LLMs) and knowledge graphs (KGs) has a
 - In the `subgraphs` folder: This directory contains the generated 2-hop and the 3rd-hop subgraphs. We deployed the Wikidata dump across five AWS EC2 instances, each consisting of a 768GB machine with 48 cores. The specific code used for generating the subgraphs can be found in `subgraph.py`.
 - In the `simple_wikidata_db` folder: This directory contains the deployed Wikidata dump.
 
-## Usage
-
-1. Clone this repository:
-
-    ```bash
-    git clone <repository_url>
-    ```
-
-2. Explore the contents of the repository, including the code and dataset.
-
-3. For generating subgraphs, refer to the `subgraph.py` script.
-
-4. For accessing the Wikidata dump, navigate to the `simple_wikidata_db` folder.
 
 ## Citation
 
