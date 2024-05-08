@@ -34,11 +34,13 @@ This repository contains the code and dataset associated with the paper [ODA: Ob
 If you use the code or dataset provided in this repository, please consider citing the following paper:
 
 ```
-@article{oda2024,
-  title={ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs},
-  author={Author(s)},
-  journal={arXiv preprint arXiv:2404.07677},
-  year={2024}
+@misc{sun2024oda,
+      title={ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs}, 
+      author={Lei Sun and Zhengwei Tao and Youdi Li and Hiroshi Arakawa},
+      year={2024},
+      eprint={2404.07677},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
