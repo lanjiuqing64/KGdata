@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code and dataset associated with the paper [ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs](https://arxiv.org/abs/2404.07677)
+This repository contains the code and dataset associated with the subgraphs used in the paper [ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs](https://arxiv.org/abs/2404.07677)
 
 ## Abstract
 
@@ -10,15 +10,79 @@ The integration of Large Language Models (LLMs) and knowledge graphs (KGs) has a
 
 
 ## The overall framework of ODA
-![The framework of ODA](framework.png)
+![The framework of ODA](images/framework.png)
 
+
+## Main Result
+![The main result of ODA](images/result.png)
 
 
 ## Description
 
-- In the `subgraphs` folder: This directory contains the generated 2-hop and the 3rd-hop subgraphs.
-- We deployed the Wikidata dump across five AWS EC2 instances, each consisting of a 768GB machine with 48 cores. The specific code used for generating the subgraphs can be found in `subgraph.py`.
-- `simple_wikidata_db` folder: This directory contains codes for deploying the Wikidata dump.
+1. **QAdata/**: Contains commonly used KBQA datasets from the state-of-the-art (SOTA).
+
+
+   
+2. **generate_subgraph/**: Includes Wikidata environment settings and code for generating subgraphs.
+
+   We deployed the Wikidata dump across five AWS EC2 instances, each consisting of a 768GB machine with 48 cores.
+   **generate_subgraph/Wikidata/** contains the deployment and knowledge extraction codes.
+   **generate_subgraph/subgraph_gen.py** is The specific code used for generating the subgraphs.
+
+
+
+## Subgraph Datasets
+
+The subgraphs based on Wikidata or Freebase can be found here [Subgraph datasets on huggingface](https://huggingface.co/datasets/CCaccept/Subgraph)
+
+The dataset comprises four folders, each containing subgraphs related to different KBQA datasets based on Wikidata or Freebase:
+
+- hop_2_FreeBase/: Contains 2-hop subgraphs based on Freebase.
+- hop_3_FreeBase/: Contains 3-hop subgraphs based on Freebase.
+- hop_2_Wikidata/: Contains 2-hop subgraphs based on Wikidata.
+- hop_3rd_Wikidata/: Contains the third hop subgraphs based on Wikidata.
+
+### The format of the subgraph files
+1. FreeBase subgraph file
+```
+{
+Topic Entity : [[EntityID,Relation,EntityID],....],
+Topic Entity : [[EntityID,Relation,EntityID],....],
+...
+}
+```
+2. FreeBase label file
+```
+{
+EntityID : Entity name
+EntityID : Entity name
+...
+}
+```
+
+3. Wikidata subgraph file
+```
+{
+Topic Entity : [[EntityID,RelationID,EntityID],....],
+Topic Entity : [[EntityID,RelationID,EntityID],....],
+...
+}
+```
+2. Wikidata label file
+
+```
+{
+EntityID : Entity name
+RelationID : Relation name
+EntityID : Entity name
+...
+}
+```
+
+
+
+Due to limitations in Freebase, the labels for a small number of entities cannot be found. We are actively working on addressing this issue, and updates will be provided in the future.
+
 
 
 ## Citation
