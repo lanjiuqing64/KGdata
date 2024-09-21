@@ -20,24 +20,23 @@ The integration of Large Language Models (LLMs) and knowledge graphs (KGs) has a
 ## Description
 
 1. **QAdata/**: Contains commonly used KBQA datasets from the state-of-the-art (SOTA).
-- Overall Summary
+ 
+  - Wikidata-based datasets:
+    - QALD10-en
+    - T-REx
+    - Zero-Shot RE
+    - Creak
   
-- Wikidata-based datasets:
-  - QALD10-en
-  - T-REx
-  - Zero-Shot RE
-  - Creak
-
-- Freebase-based datasets:
-  - GrailQA
-  - WebQSP
-  - Simple Questions
-
-- SOTA
-  - [KAPING](https://arxiv.org/abs/2306.04136)
-  - [ToG](https://arxiv.org/abs/2307.07697)
-  - [RoG](https://arxiv.org/abs/2310.01061)
-  - [StructGPT](https://arxiv.org/abs/2305.09645)
+  - Freebase-based datasets:
+    - GrailQA
+    - WebQSP
+    - Simple Questions
+  
+  - SOTA
+    - [KAPING](https://arxiv.org/abs/2306.04136)
+    - [ToG](https://arxiv.org/abs/2307.07697)
+    - [RoG](https://arxiv.org/abs/2310.01061)
+    - [StructGPT](https://arxiv.org/abs/2305.09645)
 
    
 2. **generate_subgraph/**: Includes Wikidata environment settings and code for generating subgraphs.
