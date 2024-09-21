@@ -22,10 +22,16 @@ The integration of Large Language Models (LLMs) and knowledge graphs (KGs) has a
 1. **QAdata/**: Contains commonly used KBQA datasets from the state-of-the-art (SOTA).
 - Overall Summary
   
+- Wikidata-based datasets:
+  - QALD10-en
+  - T-REx
+  - Zero-Shot RE
+  - Creak
 
-
-
-
+- Freebase-based datasets:
+  - GrailQA
+  - WebQSP
+  - Simple Questions
 
 - SOTA
   - [KAPING](https://arxiv.org/abs/2306.04136)
@@ -89,12 +95,6 @@ EntityID : Entity name
 ...
 }
 ```
-
-
-
-Due to limitations in Freebase, the labels for a small number of entities cannot be found. We are actively working on addressing this issue, and updates will be provided in the future.
-
-
 
 ## Citation
 
